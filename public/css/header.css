@@ -1,0 +1,56 @@
+.top-header{
+    background-color: #523737;
+    color: white;
+    padding: 5px 10px 15px 10px;
+    position: fixed; 
+    /* 항상 넓이를 정해줘야한다 */
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+
+.top-header .header__top, 
+.top-header .header__bottom{
+    display: flex;
+    /* 해당하는클래스를 수평으로정리해준다 */
+    justify-content: space-between;
+    /* 정당한 콘텐트 공간사이의  */
+
+}
+
+.top-header .header__top{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.top-header .header__bottom{
+    margin : 0 10px;
+   
+}
+
+.top-header .header__bottom .header__column:first-child{
+    color : rgba(255, 255, 255, 0.5);
+}
+
+.top-header .header__column{
+    width: 33%;
+}
+
+.top-header .header__column:last-child{
+    /* 배터리 컬럼의 마지막 자식 */
+    text-align: right;
+}
+
+.top-header .header__column:nth-child(2){
+    text-align: center;
+}
+
+.header__column .header_number{
+    color: antiquewhite;
+    
+}
+
+.top-header a {
+    color: white;
+}
